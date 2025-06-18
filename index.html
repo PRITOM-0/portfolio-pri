@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+
+
+    <div class="con">
+        <input type="submit" value="For ON light" onclick="lightOn()">
+        <img id="img" src="pic_bulboff.gif" alt="light">
+        <input type="submit" value="For OFF light" onclick="lightOff()">
+    </div>
+
+<br><br><br>
+
+    <form action="" autocomplete="on">
+        <fieldset>
+            <legend>Log in</legend>
+            <label for="un">Usename:</label>
+            <input type="text" name="un" id="un" placeholder="username"><span id="test"></span><br><br>
+            <label for="pass">Password:</label>
+            <input type="password" name="pass" placeholder="password"><br><br>
+            <input type="submit" value="Log in" onclick=fun()>
+        </fieldset>
+    </form>
+<br><br>
+    <form action="">
+        <fieldset>
+            <legend>Registration</legend>
+
+            <label for="fn">First name:</label>
+            <input type="text" name="fn" placeholder="firstname" autofocus><br><br>
+
+            <label for="ln">Last name:</label>
+            <input type="text" name="fn" placeholder="lastname"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="email" required><br><br>
+
+            <label for="dob"> Date of Birth:</label>
+            <input type="date" name="dob" id="dob"><br><br>
+
+            <label for="pl">Programming Language: </label>
+            <input type="radio" name="pl" value="C"> 
+            <label> C </label>
+            <input type="radio" name="pl" value="java"> 
+            <label> Java </label>
+            <input type="radio" name="pl" value="python">
+            <label> Python </label>
+            <br><br>
+
+            <label for="country">Country: </label>
+            <select name="country">
+                <option value="india">India</option>
+                <option value="bangladesh" selected>Bangladesh</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+            </select>
+            <br><br>
+            <label for="area"> Hobby: </label>
+            <input type="checkbox" name="hobby" value="reading">
+            <label for="hobby"> Reading</label>
+            <input type="checkbox" name="hobby" value="traveling"> 
+            <label for="hobby"> Traveling</label>
+            <input type="checkbox" name="hobby" value="sports">
+            <label for="hobby"> Sports</label>
+            <input type="checkbox" name="hobby" value="others">
+            <label for="hobby"> Others</label><br><br>
+
+            <label for="cc">Country Code: </label>
+            <input type="text" name="cc" placeholder="BAN" pattern="[A-Z]{3}">
+            <br><br>
+            <label for="color">Favorite Colour: </label>
+            <input type="color" name="color">
+
+            <br><br><input type="submit" value="Register">
+        </fieldset>
+    </form>
+
+
+    
+    
+</body>
+</html>

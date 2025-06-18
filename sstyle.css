@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(195, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav1{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav2{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+}
+.nav2 p:hover {
+    color: blue;
+    transform: scale(1.1);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.nav3{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+}
+.nav3 p:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.nav3 p{
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+    padding: 10px 20px;
+}
+.first{
+    width: 100%;
+    height: 500px;
+    background-image: url("img/cover.jpg");
+    background-position: center;
+    
+    display: flex;
+    justify-content: space-between;
+
+    color: white;
+}
+
+.first_l{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    
+}
+.first_l h1{
+    font-size: 50px;
+}
+.slink{
+    display: flex;
+    
+}
+.slink p{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.slink p:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.first_r{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first_r li{
+    list-style: none;
+    width: 200px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.first_r li:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #007bff;
+}
+
+.card .headline {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.card .desc {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.footer {
+    background-color: white;
+    color:black;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer .con {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer .links li {
+    display: inline;
+}
+
+.footer .links a {
+    color:black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer .links a:hover {
+    color: #084b6d;
+}
