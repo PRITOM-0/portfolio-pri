@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 400px;
+    
+    border: 1px solid blue;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10vh;
+    padding: 30px;
+    box-shadow: -1px 3px 20px 10px lightblue;
+    
+}
+.container h2{
+    text-align: center;
+    color: blue
+}
+hr{
+    margin: 10px;
+    color: blue;
+}
+.form{
+    margin-top: 20px;
+}
+input{
+    padding: 5px 10px;
+    margin-top: 5px;
+}
