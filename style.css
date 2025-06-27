@@ -6,6 +6,10 @@ body{
     background-color: rgb(195, 255, 255);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+a{
+    text-decoration: none;
+    
+}
 .navbar{
     width: 100%;
     height: 80px;
@@ -33,19 +37,19 @@ body{
     transition: color 0.3s ease, transform 0.3s ease;
 }
 .nav3{
-    width: 20%;
+    width: 30%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-weight: bold;
 }
-.nav3 p:hover {
+.nav3 div:hover {
     background-color: black;
     color: white;
     transform: scale(1.1);
     transition: all 0.3s ease;
 }
-.nav3 p{
+.nav3 div{
     font-size: 15px;
     border: 2px solid black;
     border-radius: 5px;

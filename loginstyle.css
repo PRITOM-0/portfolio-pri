@@ -1,31 +1,112 @@
-*{
-    margin: 0;
-    padding: 0;
+/* Reset some default styles */
+* {
     box-sizing: border-box;
-}
-.container{
-    width: 400px;
-    
-    border: 1px solid blue;
-    border-radius: 20px;
-    margin: auto;
-    margin-top: 10vh;
-    padding: 30px;
-    box-shadow: -1px 3px 20px 10px lightblue;
-    
-}
-.container h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: #f4f7f8;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    background: #fff;
+    max-width: 500px;
+    width: 100%;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
     text-align: center;
-    color: blue
-}
-hr{
-    margin: 10px;
-    color: blue;
-}
-.form{
-    margin-top: 20px;
-}
-input{
-    padding: 5px 10px;
-    margin-top: 5px;
-}
+    color: #4a90e2;
+    margin-bottom: 20px;
+  }
+  
+  hr {
+    border: none;
+    border-top: 2px solid #4a90e2;
+    margin-bottom: 25px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  
+  .input,
+  input[type="email"],
+  input[type="password"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1.8px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #4a90e2;
+    outline: none;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 6px;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  #v {
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-right: 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="button"]:hover,
+  input[type="reset"]:hover,
+  input[type="submit"]:hover {
+    background: #357abd;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+    input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+  

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Validation</title>
+    <link rel="stylesheet" href="voting.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav1">
+                <h1>PRITOM SAHA</h1>
+            </div>
+            <div class="nav2">
+                <a href="index.html">Home</a>
+                <p>skills</p>
+                <p>Education</p>
+                <p>Projects</p>
+                <p>About</p>
+                
+            </div>
+            <div class="nav3">
+                <div class="price"><p>Pricing</p></div>
+                <div class="conatct"><p>Contact</p></div>
+                <div class="Voting"><a href="voting.html">Voting</a></div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <h2>Voting Validation Form</h2>
+        <form id="votingForm">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname">
+          <span id="v_fname"></span>
+    
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname">
+          <span id="v_lname"></span>
+    
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+    
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <input type="checkbox" id="showPass" >
+
+            <span>Show Password</span><br>
+            <span id="key"></span><br>
+            <span id="length">&#10060; length more then equal 8 character. </span><br>
+            <span id="capital">&#10060; Capital alphabet. </span><br>
+            <span id="lower">&#10060; Lower alphabet.</span><br>
+            <span id="digit">&#10060; Digit alphabet.</span><br>
+            <span id="s_char">&#10060; Special alphabet.</span><br>
+    
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob">
+          <p id="ageMessage" style="color: red;"></p>
+    
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location">
+    
+          <label for="nid">NID Card Number</label>
+          <input type="text" id="nid" name="nid">
+    
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+8801XXXXXXXXX">
+          <span id="v_phone"></span>
+    
+          <label for="code">Verification Code</label>
+          <input type="text" id="code" name="code">
+          <span id="v_code">ex: XXX-X-00-0000</span><span id="codev"></span>
+    
+          <div class="checkbox-group">
+            <input type="checkbox" id="correct" name="correct" >
+            <label for="accept">All informations are correcet.</label>
+          </div>
+    
+          <div class="buttons">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+          </div>
+        </form>
+      </div>
+
+    <footer class="footer">
+        <div class="con">
+            <p>&copy; 2025 Pritom Saha. All rights reserved.</p>
+            <ul class="links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="votting.js"></script>
+</body>
+</html>
