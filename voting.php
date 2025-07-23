@@ -10,10 +10,11 @@
     $nid = $_POST["nid"];
     $phone = $_POST["phone"];
     $code = $_POST["code"];
+    $post = $_POST["post"];
 
 
-    $query="INSERT INTO `voter_info`(`First Name`,`Last Name`,Username,Password,`Date Of Birth`,Location,NID,Phone,Code)
-            VALUES('$fname','$lname','$username','$password','$dob','$location','$nid','$phone','$code')";
+    $query="INSERT INTO `voter_info`(`FirstName`,`LastName`,Username,Password,`DateOfBirth`,Location,NID,Phone,Code,Post)
+            VALUES('$fname','$lname','$username','$password','$dob','$location','$nid','$phone','$code','$post')";
 
     $run = mysqli_query($con,$query);
 
@@ -23,11 +24,5 @@
     else{
         header("location: voting.html");
     }
-
-
-
-
-    
-
 
 ?>

@@ -1,0 +1,27 @@
+CREATE DATABASE log;
+
+CREATE TABLE info (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(100) NOT NULL,
+    password VARCHAR(100) NOT NULL
+);
+
+
+
+
+
+
+CREATE DATABASE log;
+
+CREATE TABLE voter_info (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    `First Name` VARCHAR(50) NOT NULL,
+    `Last Name` VARCHAR(50) NOT NULL,
+    Username VARCHAR(50) NOT NULL UNIQUE,
+    Password VARCHAR(255) NOT NULL,
+    `Date Of Birth` DATE NOT NULL,
+    Location VARCHAR(100),
+    NID VARCHAR(20) NOT NULL UNIQUE,
+    Phone VARCHAR(15),
+    Code VARCHAR(20)
+);

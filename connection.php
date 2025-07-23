@@ -7,10 +7,10 @@
 
     $con = mysqli_connect($host, $user, $password,$db);
     if(!$con){
-        echo "Connection faild !!!";
+        echo "Connection faild !!!<br><br>";
     }
     else{
-        echo "connection Successful !!!";
+        echo "Welcome to News Feed !!!<br><br>";
     }
 
 
