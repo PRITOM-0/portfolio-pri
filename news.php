@@ -50,7 +50,30 @@
 
     <div class="container">
         <div class="left">
-            <h2>Left Panel</h2><hr>
+            <h2>User List</h2><hr>
+          
+          
+          <?php
+
+    include "connection.php";
+
+    $query = "SELECT * FROM `voter_info`";
+    $run = mysqli_query($con,$query);
+    
+
+    if(mysqli_num_rows($run)>0){
+
+        while($row = mysqli_fetch_assoc($run)){
+            
+            echo "<div class='card'>
+                <h3>" .$row['FirstName']." ".$row['LastName']. "</h3>
+              </div>";
+        }
+    }
+        
+
+
+?>
             
             
         </div>
@@ -106,7 +129,29 @@
         </div>
 
         <div class="right">
-            <h2>Right Panel</h2><hr>
+            <h2>Location</h2><hr>
+            
+            <?php
+
+    include "connection.php";
+
+    $query = "SELECT * FROM `voter_info`";
+    $run = mysqli_query($con,$query);
+    
+
+    if(mysqli_num_rows($run)>0){
+
+        while($row = mysqli_fetch_assoc($run)){
+            
+            echo "<div class='card'>
+                <h3>" .$row['Location']."</h3>
+              </div>";
+        }
+    }
+        
+
+
+?>
             
         </div>
     </div>

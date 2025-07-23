@@ -10,7 +10,7 @@
         echo "Connection faild !!!<br><br>";
     }
     else{
-        echo "Welcome to News Feed !!!<br><br>";
+        echo "Pritom Saha<hr><br><br>";
     }
 
 
