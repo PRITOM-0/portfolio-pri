@@ -80,16 +80,25 @@ a{
 .left {
     background-color: #bdcad3;
     width: 20%;
+    overflow-y: auto;
+    height: 100vh;
+    padding: 20px;
 }
 
 .center {
-    background-color: #d7e6dd;
-    width: 60%;
+    background-color: #fefefe;
+    width: 70%;
+    overflow-y: auto;
+    height: 100vh;
+    padding: 20px;
 }
 
 .right {
     background-color: #d6c0be;
     width: 20%;
+    overflow-y: auto;
+    height: 100vh;
+    padding: 20px;
 }
 
 h2 {
