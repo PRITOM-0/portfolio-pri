@@ -7,12 +7,6 @@ CREATE TABLE info (
 );
 
 
-
-
-
-
-CREATE DATABASE log;
-
 CREATE TABLE voter_info (
     id INT AUTO_INCREMENT PRIMARY KEY,
     `First Name` VARCHAR(50) NOT NULL,
@@ -23,5 +17,6 @@ CREATE TABLE voter_info (
     Location VARCHAR(100),
     NID VARCHAR(20) NOT NULL UNIQUE,
     Phone VARCHAR(15),
-    Code VARCHAR(20)
+    Code VARCHAR(20),
+    Post VARCHAR(255)
 );

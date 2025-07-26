@@ -5,9 +5,9 @@
     $password="";
     $db="log";
 
-    $con = mysqli_connect($host, $user, $password,$db);
+    $con = mysqli_connect($host, $user, $password, $db);
     if(!$con){
-        echo "Connection faild !!!<br><br>";
+        echo "Connection failed !!!<br><br>";
     }
     else{
         echo "Pritom Saha<hr><br><br>";
