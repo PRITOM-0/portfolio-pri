@@ -10,7 +10,6 @@
         echo "Connection failed !!!<br><br>";
     }
     else{
-        echo "Pritom Saha<hr><br><br>";
     }
 
 

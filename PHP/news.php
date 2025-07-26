@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Feed</title>
-    <link rel="stylesheet" href="news.css">
+    <link rel="stylesheet" href="../CSS/news.css">
 
     <style>
         
@@ -31,7 +31,7 @@
                 <h1>PRITOM SAHA</h1>
             </div>
             <div class="nav2">
-                <a href="index.html">Home</a>
+                <a href="../index.html">Home</a>
                 <p>skills</p>
                 <p>Education</p>
                 <p>Projects</p>
@@ -41,7 +41,7 @@
             <div class="nav3">
                 <div class="price"><p><a href="news.php">News Feed</a></p></div>
                 <div class="conatct"><p>Contact</p></div>
-                <div class="Voting"><a href="voting.html">Voting</a></div>
+                <div class="Voting"><a href="../HTML/voting.html">Voting</a></div>
             </div>
         </nav>
     </header>

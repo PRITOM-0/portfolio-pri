@@ -9,14 +9,24 @@ CREATE TABLE info (
 
 CREATE TABLE voter_info (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    `First Name` VARCHAR(50) NOT NULL,
-    `Last Name` VARCHAR(50) NOT NULL,
+    `FirstName` VARCHAR(50) NOT NULL,
+    `LastName` VARCHAR(50) NOT NULL,
     Username VARCHAR(50) NOT NULL UNIQUE,
     Password VARCHAR(255) NOT NULL,
-    `Date Of Birth` DATE NOT NULL,
+    `DateOfBirth` DATE NOT NULL,
     Location VARCHAR(100),
     NID VARCHAR(20) NOT NULL UNIQUE,
     Phone VARCHAR(15),
     Code VARCHAR(20),
     Post VARCHAR(255)
+);
+
+CREATE TABLE Person_info (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    age INT NOT NULL,
+    gender VARCHAR(20) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL
 );

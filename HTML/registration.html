@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Registration</title>
 </head>
 <body>
     <form action="../PHP/code.php" method="post">
         <fieldset>
-        <legend>Login</legend>
+        <legend>Registration</legend>
 
         <label for="un">Username</label>
-        <input type="text" name="un" id="un" autofocus>
+        <input type="text" name="un" id="un" required autofocus>
         <br><br>
 
-        <label for="pass"> Password</label>
-        <input type="password" name="pass" id="pass">
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass" required>
         <br><br>
         
-	    <input type="submit" value="Log in">
+        <input type="submit" value="Register">
 
         </fieldset>
     </form>
